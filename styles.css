@@ -369,3 +369,24 @@ footer {
   text-align: center;
 }
 }
+/* ===== MAKE SINGLE CARD LOOK LIKE NORMAL GRID CARD ===== */
+.track-grid:only-child,
+.track-grid .track-card:only-child {
+  display: flex;
+  justify-content: center;
+}
+
+.track-grid .track-card:only-child {
+  max-width: 350px;   /* نفس حجم الكارد في الديسكتوب */
+  width: 100%;
+  margin: auto;
+}
+
+/* ===== RESPONSIVE FOR SINGLE CARD — EXACTLY LIKE TRACKS ===== */
+@media (max-width: 768px) {
+  .track-grid .track-card:only-child {
+    max-width: 100%;  /* على الموبايل تبقى كارد عريضة نفس الـ Tracks */
+    margin: 0;        /* نفس الترتيب بتاع الـ Tracks */
+  }
+}
+
