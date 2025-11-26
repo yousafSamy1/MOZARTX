@@ -1,9 +1,15 @@
 const tracks = [
   {
+    title: "MOZARTX - El3eb",
+    thumbnail: "./Images/El3eb.png",
+    url: "https://youtu.be/HSnULQCkA14?si=NEduAESpd1uP4Txz",
+    featured: true
+  },
+  {
     title: "MOZARTX - Depression",
     thumbnail: "./Images/depression_4.png",
     url: "https://youtu.be/m7wWQM5IPXM?si=_xppna95BExGa_t4",
-    featured: true
+    featured: false
   },
   {
     title: "MOZARTX SHEIN",
