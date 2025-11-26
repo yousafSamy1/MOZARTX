@@ -60,10 +60,21 @@ nav {
   transition: 0.3s ease;
 }
 
-.social-icons a.youtube:hover { color: #ff0000; }
-.social-icons a.spotify:hover { color: #1db954; }
-.social-icons a.instagram:hover { color: #e1306c; }
-.social-icons a.tiktok:hover { color: #25f4ee; }
+.social-icons a.youtube:hover {
+  color: #ff0000;
+}
+
+.social-icons a.spotify:hover {
+  color: #1db954;
+}
+
+.social-icons a.instagram:hover {
+  color: #e1306c;
+}
+
+.social-icons a.tiktok:hover {
+  color: #25f4ee;
+}
 
 /* ===== SECTION TITLE ===== */
 .section-title {
@@ -160,148 +171,197 @@ nav {
   margin: 50px auto;
 }
 
-.about-section { 
-  background-color: #111; 
-  padding: 60px 20px; 
-  display: flex; 
-  justify-content: flex-start; 
-  box-sizing: border-box; /* ضمان عدم تجاوز الحدود */
-} 
-
-.about-content { 
-  max-width: 1000px; 
-  margin-left: 60px; 
-  width: 100%; /* ضمان عدم تجاوز العرض */
-  box-sizing: border-box; 
-} 
-
-.about-text { 
-  display: flex; 
-  align-items: flex-start; /* بدء النص من الأعلى تمامًا */
-  justify-content: flex-start; 
-  color: #fff; 
-  text-align: left; 
-  position: relative; 
-  gap: 0; /* إزالة أي مسافات إضافية بين العناصر */
-  width: 100%; /* ضمان عدم التمدد الجانبي */
-  height: auto; /* ارتفاع تلقائي */
-} 
-
-/* كلمة ABOUT */ 
-.about-title { 
-  color: #ff0000; 
-  font-weight: 800; 
-  font-size: 2.3rem; 
-  margin-right: 15px; 
-  letter-spacing: 1px; 
-  position: relative; 
-  z-index: 2; 
-  flex-shrink: 0; /* منع تصغيرها */
-  margin-top: 0; /* إزالة هامش علوي */
-  white-space: nowrap; /* منع كسر السطر للعنوان */
-  align-self: center; /* تثبيت ABOUT في المنتصف الرأسي بالنسبة للخط */
-} 
-
-/* الخط الأحمر الثابت والطويل */ 
-.about-line { 
-  width: 6px; 
-  height: 290px; /* طول الخط الثابت */
-  background-color: #ff0000; 
-  margin-right: 25px; 
-  border-radius: 3px; 
-  position: relative; 
-  flex-shrink: 0; /* منع التصغير */
-  margin-top: 0; /* إزالة هامش علوي ليبدأ من الأعلى */
-  align-self: stretch; /* جعل الخط يحدد الارتفاع للـ container */
-} 
-
-/* النص اللي بيتكتب */ 
-#about-dynamic { 
-  color: #fff; 
-  font-size: 1.4rem; /* النص بقى أكبر */ 
-  white-space: pre-wrap; 
-  display: inline-block; 
-  max-width: 600px; 
-  line-height: 1.8; 
-  margin-top: 0; /* إزالة المسافة العلوية للنص */
-  margin-bottom: 0; /* إزالة المسافة السفلية لتجنب الفراغ الإضافي */
-  padding: 0; /* إزالة أي padding */
-  word-wrap: break-word; /* كسر الكلمات الطويلة دون تجاوز */
-  overflow-wrap: break-word; 
-} 
-
-/* Responsive للشاشات المتوسطة */ 
-@media (max-width: 768px) { 
-  .about-section { 
-    padding: 40px 15px; /* تقليل البادينج للشاشات الصغيرة */
-  } 
-  .about-content { 
-    margin-left: 0; /* إزالة المارجن الأيسر تمامًا */
-    padding: 0; /* إزالة padding إضافي */
-    width: 100%; 
-  } 
-  .about-text { 
-    flex-direction: row; /* الحفاظ على الصفوف الأفقية إذا أمكن، لكن مع ضغط */
-    align-items: flex-start; 
-    justify-content: flex-start; 
-    width: 100%; 
-    overflow: hidden; /* منع التجاوز الجانبي */
-  } 
-  .about-title { 
-    font-size: 1.8rem; 
-    margin-right: 10px; /* تقليل المارجن */
-    align-self: center; /* الحفاظ على التوسيط الرأسي */
-  } 
-  .about-line { 
-    height: 120px; /* تقليل الارتفاع للتناسب */
-    margin-right: 15px; 
-    min-height: 0; /* منع التمدد الإجباري */
-  } 
-  #about-dynamic { 
-    font-size: 1.2rem; 
-    max-width: calc(100% - 100px); /* حساب العرض المتاح لتجنب التجاوز */
-    flex-shrink: 1; /* السماح بتصغير النص إذا لزم */
-  } 
-} 
-
-/* Responsive إضافي للشاشات الصغيرة جدًا (موبايل) */ 
-@media (max-width: 480px) { 
-  .about-section { 
-    padding: 30px 10px; 
-  } 
-  .about-content { 
-    margin-left: 0; 
-    width: 100%; 
-  } 
-  .about-text { 
-    flex-direction: column; /* ترتيب عمودي للشاشات الصغيرة جدًا لتجنب الازدحام الجانبي */
-    align-items: flex-start; 
-    width: 100%; 
-  } 
-  .about-title { 
-    margin-right: 0; 
-    margin-bottom: 5px; /* مسافة صغيرة تحت العنوان */
-    align-self: center; /* توسيط أفقي في العمودي إذا لزم */
-    font-size: 1.6rem; 
-  } 
-  .about-line { 
-    display: none; /* إخفاء الخط تمامًا في الموبايل */
-  } 
-  #about-dynamic { 
-    max-width: 100%; /* عرض كامل للنص في الموبايل */
-    font-size: 1.1rem; 
-    line-height: 1.6; /* تقليل الخطوط للتوفير في المساحة */
-    margin-left: 0; /* إزالة أي مارجن أيسر إضافي بعد إخفاء الخط */
-  } 
+.about-section {
+  background-color: #111;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  /* ضمان عدم تجاوز الحدود */
 }
 
-/* إضافة عامة لمنع التجاوز الجانبي في جميع الأحجام */ 
-* { 
-  box-sizing: border-box; 
-} 
+.about-content {
+  max-width: 1000px;
+  margin-left: 60px;
+  width: 100%;
+  /* ضمان عدم تجاوز العرض */
+  box-sizing: border-box;
+}
 
-html, body { 
-  overflow-x: hidden; /* منع التمرير الأفقي العام */
+.about-text {
+  display: flex;
+  align-items: flex-start;
+  /* بدء النص من الأعلى تمامًا */
+  justify-content: flex-start;
+  color: #fff;
+  text-align: left;
+  position: relative;
+  gap: 0;
+  /* إزالة أي مسافات إضافية بين العناصر */
+  width: 100%;
+  /* ضمان عدم التمدد الجانبي */
+  height: auto;
+  /* ارتفاع تلقائي */
+}
+
+/* كلمة ABOUT */
+.about-title {
+  color: #ff0000;
+  font-weight: 800;
+  font-size: 2.3rem;
+  margin-right: 15px;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  /* منع تصغيرها */
+  margin-top: 0;
+  /* إزالة هامش علوي */
+  white-space: nowrap;
+  /* منع كسر السطر للعنوان */
+  align-self: center;
+  /* تثبيت ABOUT في المنتصف الرأسي بالنسبة للخط */
+}
+
+/* الخط الأحمر الثابت والطويل */
+.about-line {
+  width: 6px;
+  height: 290px;
+  /* طول الخط الثابت */
+  background-color: #ff0000;
+  margin-right: 25px;
+  border-radius: 3px;
+  position: relative;
+  flex-shrink: 0;
+  /* منع التصغير */
+  margin-top: 0;
+  /* إزالة هامش علوي ليبدأ من الأعلى */
+  align-self: stretch;
+  /* جعل الخط يحدد الارتفاع للـ container */
+}
+
+/* النص اللي بيتكتب */
+#about-dynamic {
+  color: #fff;
+  font-size: 1.4rem;
+  /* النص بقى أكبر */
+  white-space: pre-wrap;
+  display: inline-block;
+  max-width: 600px;
+  line-height: 1.8;
+  margin-top: 0;
+  /* إزالة المسافة العلوية للنص */
+  margin-bottom: 0;
+  /* إزالة المسافة السفلية لتجنب الفراغ الإضافي */
+  padding: 0;
+  /* إزالة أي padding */
+  word-wrap: break-word;
+  /* كسر الكلمات الطويلة دون تجاوز */
+  overflow-wrap: break-word;
+}
+
+/* Responsive للشاشات المتوسطة */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 15px;
+    /* تقليل البادينج للشاشات الصغيرة */
+  }
+
+  .about-content {
+    margin-left: 0;
+    /* إزالة المارجن الأيسر تمامًا */
+    padding: 0;
+    /* إزالة padding إضافي */
+    width: 100%;
+  }
+
+  .about-text {
+    flex-direction: row;
+    /* الحفاظ على الصفوف الأفقية إذا أمكن، لكن مع ضغط */
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: hidden;
+    /* منع التجاوز الجانبي */
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+    margin-right: 10px;
+    /* تقليل المارجن */
+    align-self: center;
+    /* الحفاظ على التوسيط الرأسي */
+  }
+
+  .about-line {
+    height: 120px;
+    /* تقليل الارتفاع للتناسب */
+    margin-right: 15px;
+    min-height: 0;
+    /* منع التمدد الإجباري */
+  }
+
+  #about-dynamic {
+    font-size: 1.2rem;
+    max-width: calc(100% - 100px);
+    /* حساب العرض المتاح لتجنب التجاوز */
+    flex-shrink: 1;
+    /* السماح بتصغير النص إذا لزم */
+  }
+}
+
+/* Responsive إضافي للشاشات الصغيرة جدًا (موبايل) */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 30px 10px;
+  }
+
+  .about-content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .about-text {
+    flex-direction: column;
+    /* ترتيب عمودي للشاشات الصغيرة جدًا لتجنب الازدحام الجانبي */
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .about-title {
+    margin-right: 0;
+    margin-bottom: 5px;
+    /* مسافة صغيرة تحت العنوان */
+    align-self: center;
+    /* توسيط أفقي في العمودي إذا لزم */
+    font-size: 1.6rem;
+  }
+
+  .about-line {
+    display: none;
+    /* إخفاء الخط تمامًا في الموبايل */
+  }
+
+  #about-dynamic {
+    max-width: 100%;
+    /* عرض كامل للنص في الموبايل */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    /* تقليل الخطوط للتوفير في المساحة */
+    margin-left: 0;
+    /* إزالة أي مارجن أيسر إضافي بعد إخفاء الخط */
+  }
+}
+
+/* إضافة عامة لمنع التجاوز الجانبي في جميع الأحجام */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  /* منع التمرير الأفقي العام */
 }
 
 
@@ -339,36 +399,38 @@ footer {
   }
 
   .track-card {
-  background-color: #111;
-  border-radius: 15px;
-  overflow: hidden;
-  transition: 0.3s;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* يخلي كل حاجة في النص */
-  text-align: center;
-  position: relative;
+    background-color: #111;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* يخلي كل حاجة في النص */
+    text-align: center;
+    position: relative;
+  }
+
+  .track-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .track-info {
+    padding: 10px 15px;
+    width: 100%;
+  }
+
+  .track-info h2 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #fff;
+    text-align: center;
+  }
 }
 
-.track-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.track-info {
-  padding: 10px 15px;
-  width: 100%;
-}
-
-.track-info h2 {
-  font-size: 1.1rem;
-  margin: 10px 0;
-  color: #fff;
-  text-align: center;
-}
-}
 /* ===== MAKE SINGLE CARD LOOK LIKE NORMAL GRID CARD ===== */
 .track-grid:only-child,
 .track-grid .track-card:only-child {
@@ -377,7 +439,8 @@ footer {
 }
 
 .track-grid .track-card:only-child {
-  max-width: 350px;   /* نفس حجم الكارد في الديسكتوب */
+  max-width: 350px;
+  /* نفس حجم الكارد في الديسكتوب */
   width: 100%;
   margin: auto;
 }
@@ -385,8 +448,9 @@ footer {
 /* ===== RESPONSIVE FOR SINGLE CARD — EXACTLY LIKE TRACKS ===== */
 @media (max-width: 768px) {
   .track-grid .track-card:only-child {
-    max-width: 100%;  /* على الموبايل تبقى كارد عريضة نفس الـ Tracks */
-    margin: 0;        /* نفس الترتيب بتاع الـ Tracks */
+    max-width: 100%;
+    /* على الموبايل تبقى كارد عريضة نفس الـ Tracks */
+    margin: 0;
+    /* نفس الترتيب بتاع الـ Tracks */
   }
 }
-
