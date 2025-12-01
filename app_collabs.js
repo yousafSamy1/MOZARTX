@@ -1,4 +1,10 @@
 const collabs = [
+      {
+        title: "Gaya Gaya _ Mozartx (Dj ELBOB)",
+        thumbnail: "./Images/gay.jpg",
+        url: "https://youtu.be/E8VUBH0CnO0?si=NF0CMGDTx0c02jBx",
+        featured: true
+    },
     {
         title: "Mohaymen - Liyam ft Mozartx",
         thumbnail: "./Images/Mohaymen - Liyam ft Mozartx.png",
