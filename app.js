@@ -1,9 +1,18 @@
 const tracks = [
+
+  {
+    title: "MOZARTx-Yalel",
+    thumbnail: "./Images/2.png",
+    url: "https://youtu.be/Ibz52gY1T-E?si=3JgKM78hD8EavmAe",
+    featured: true
+  },
+
+
   {
     title: "MOZARTX - El3eb",
     thumbnail: "./Images/El3eb.png",
     url: "https://youtu.be/HSnULQCkA14?si=NEduAESpd1uP4Txz",
-    featured: true
+    featured: false
   },
   {
     title: "MOZARTX - Depression",
