@@ -1,25 +1,17 @@
 const tracks = [
 
-
-
-
-
-
-
   {
     title: "MOZARTx-Dwa5ony",
-    thumbnail: "./Images/2.png",
+    thumbnail: "./Images/dwa5ony.jpg",
     url: "https://youtu.be/JVPK6M2Itbs?si=3IL_3CMNrrROhPhr",
     featured: true
   },
 
-
-
-
   {
     title: "MOZARTx-Yalel",
     thumbnail: "./Images/dwa5ony.jpg",
-    url: "https://youtu.be/Ibz52gY1T-E?si=3JgKM78hD8EavmAe",
+        thumbnail: "./Images/2.png",
+    url: "https://youtu.be/Ibz52gY1T-E?si=AH84fGbmQEVOXifm",
     featured: false
   },
 
