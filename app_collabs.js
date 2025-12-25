@@ -9,7 +9,7 @@ const collabs = [
         title: "Mohaymen - Liyam ft Mozartx",
         thumbnail: "./Images/Mohaymen - Liyam ft Mozartx.png",
         url: "https://youtu.be/IR66BPIPhJA?si=1kWrI-GIxQ_LmEsr",
-        featured: true
+        featured: false
     },
 
 ];
