@@ -1,10 +1,16 @@
 const tracks = [
+  {
+    title: "MOZARTX-Lucifer",
+    thumbnail: "./Images/Lucifer.jpeg",
+    url: "https://youtu.be/nSYhkRx7Cx4?si=BGqQH9AD5Tpz7Rfv",
+    featured: true
+  },
 
   {
     title: "MOZARTx-Dwa5ony",
     thumbnail: "./Images/dwa5ony.jpg",
     url: "https://youtu.be/JVPK6M2Itbs?si=3IL_3CMNrrROhPhr",
-    featured: true
+    featured: false
   },
 
   {
