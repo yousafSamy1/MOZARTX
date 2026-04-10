@@ -1,17 +1,10 @@
 const collabs = [
-      {
-        title: "Gaya Gaya _ Mozartx (Dj ELBOB)",
-        thumbnail: "./Images/gay.jpg",
-        url: "https://youtu.be/E8VUBH0CnO0?si=NF0CMGDTx0c02jBx",
-        featured: true
-    },
     {
-        title: "Mohaymen - Liyam ft Mozartx",
-        thumbnail: "./Images/Mohaymen - Liyam ft Mozartx.png",
-        url: "https://youtu.be/IR66BPIPhJA?si=1kWrI-GIxQ_LmEsr",
-        featured: false
-    },
-
+        title: "Rich - ريتش _ MozartX",
+        thumbnail: "./Images/newwwwwwwwwwwww.jpeg",
+        url: "https://youtu.be/oi7V3eIUibg?si=6vecKowLcMIpNtvF",
+        featured: true
+    }
 ];
 
 const grid = document.getElementById("collabs-grid");
