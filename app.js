@@ -193,7 +193,7 @@ tracks.forEach(track => {
 
 // كتابة تلقائية للنص في الـ About section
 const aboutText = `
-I’m a rapper and music producer from Tanta, currently based in Giza, and I’m 22 years old.
+I’m a rapper and music producer from Tanta, and I’m 22 years old.
 I’ve been making tracks since 2019, blending pop, rap, R&B, and EDM with my own unique sound and real vibe.
 My track “Haly Halak” reached over 50K streams, and this is just the beginning.
 `;
