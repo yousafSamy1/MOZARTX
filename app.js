@@ -84,7 +84,7 @@ animate();
 const tracks = [
   {
     title: "Mozart-Mhkama",
-    thumbnail: "./Images/NEW TRACK.jpeg",
+    thumbnail: "./Images/NEW_TRACK.jpeg",
     url: "https://youtu.be/jPUjcwI0FA0?si=cxLCxm-QAl2jRyx3",
     featured: true
   },
