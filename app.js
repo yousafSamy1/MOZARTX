@@ -83,10 +83,16 @@ animate();
 // Existing track data and logic
 const tracks = [
   {
+    title: "Mozart-Mhkama",
+    thumbnail: "./Images/NEW TRACK.jpeg",
+    url: "https://youtu.be/jPUjcwI0FA0?si=cxLCxm-QAl2jRyx3",
+    featured: true
+  },
+  {
     title: "MOZARTX - ANA MZAML4",
     thumbnail: "./Images/newww.jpeg",
     url: "https://youtu.be/FLGFTK3OW54?si=llxcZL3rJwoYnswo",
-    featured: true
+    featured: false
   },
 
   {
